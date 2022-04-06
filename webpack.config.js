@@ -38,6 +38,10 @@ module.exports = {
       template: 'public/index.html',
     })
   ],
+  resolve: {
+    extensions: ['.es6', '.js', '.jsx'],
+    modules: ['node_modules']
+  },
   devServer: {
     host: 'localhost',
     port: port,
