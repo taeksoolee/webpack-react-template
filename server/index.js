@@ -6,6 +6,8 @@ function sleep(ms) {
   })
 }
 
+app.use(require('cors')());
+
 app.get('/', async function(req, res) {
   await sleep(5000);
   res.json({'hello' : 'world'});  
